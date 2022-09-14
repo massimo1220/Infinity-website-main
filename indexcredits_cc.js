@@ -8,7 +8,7 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on asdfadfs <span> (x), close the modal
+// When the user clicks on asdfadf1s <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
