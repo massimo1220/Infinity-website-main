@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Revisioner App - Infinity Developer</title>
+    <meta content="Revisioner App for Windows" property="og:title">
+    <meta content="Revision App designed for windows 10 & 11." property="og:description">
+    <!--<meta content="https://embed.com/this-is-the-site-url" property="og:url">
+    <meta content="https://embed.com/embedimage.png" property="og:image">
+    <meta content="#43B581" data-react-helmet="true" name="theme-color">-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/icon_image.png" type="image/x-icon">
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="style_mobile.css" rel="stylesheet" type="text/css" />
+    <link href="../navbar.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!--<style>
+    
+    body, html {
+      height: 100%;
+      color: #19232D;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("../images/landscape_block_view.png");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+  </style>-->
+  <script src="https://csdvlpck1g1g.statuspage.io/embed/script.js"></script>
+  <script>
+    if (screen.width > 600)
+    {
+      window.location.replace("index.html")
+    }
+  </script>
+  <body class="colouredbg" style="overflow-x: hidden;">
+    <div class="backbtnwrapper">
+      <button class="backbtn" onclick="window.location.replace('/');">⬅ Back</button>
+    </div>
+    <!--<p>Revisioner</p>-->
+    <img style="padding-top: 45px; width: 80vw; margin: auto;" src="../images/landscape_block_view.png" alt="Revisioner [img]" style="max-width: 90vw; height: auto;">
+    <div class="gallery fade-in move-up-on-hover" style="padding-top: 50px; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 25vw); grid-gap: 200px; padding-bottom: 150px;">
+      <figure class="gallery-item"> 
+        <img class="gallery-image front-image" src="/images/revisioner.png" alt="Discord Bots [img]" style="max-height: 24vh; width: auto;">
+        <figcaption class="gallery-text">Blocks Distractions on the Internet</figcaption>
+      </figure> 
+      <figure class="gallery-item"> 
+        <img class="gallery-image front-image" src="/images/revisioner.png" alt="Revisioner [img]" style="max-height: 24vh; width: auto;">
+        <figcaption class="gallery-text">Customize Websites to Block</figcaption>
+      </figure>
+      <figure class="gallery-item"> 
+        <img class="gallery-image front-image" src="/images/revisioner.png" alt="Other Projects [img]" style="max-height: 24vh; width: auto;">
+        <figcaption class="gallery-text">Schedule Work and Downtime</figcaption>
+      </figure>
+    </div>
+    <p style="font-size: 40px; padding-top: 40px">Snapshots</p>
+    <div class="slideshow-container" style="padding-top: 10px;">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="../images/v1-0-7a.png" style="width:100%">
+        <div class="text">Mockup design (a) for v1.0.7 dashboard (subject to change)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/v1-0-7b.png" style="width:100%">
+        <div class="text">Mockup design (b) for v1.0.7 dashboard (subject to change)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/android_studio_revisioner.png" style="width:100%">
+        <div class="text">Me attempting to build an app for mobile Android Studio</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/dashboard_dark.png" style="width:100%">
+        <div class="text">Early dark mode dashboard preview (v1.0.5)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/reminder_window_new.png" style="width:100%">
+        <div class="text">Reminders & Scheduling page (light mode)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/blockpage.png" style="width:100%">
+        <div class="text">What happens if you visit a blocked website</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/win11.png" style="width:100%">
+        <div class="text">Windows 11 Dashboard</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+    <p style="font-size: 40px;">Details</p>
+    <p style="font-size: 20px;">Revisioner is an app under development designed to aid revision by blocking potential distractions and distractive material.
+      This includes but is not limited to website blocking, reminders (schedule website blocking to enable & disable), and Screen Savers. <br>
+      Personalisation options include light/dark mode, background images & more...
+    </p>
+    <div id="faq">
+      <p style="font-size: 40px;">FAQ</p>
+      <details class="faq">
+        <summary>
+          Why are some websites not blocked immediately?
+        </summary>
+        <p class="detail-text">Due to browser caching, the website may continue to load unblocked for up to ~10 minutes after enabling website blocking. Close all browser windows and re-open if the issue persists.</p>
+      </details>
+      <details class="faq">
+        <summary>
+          Why do I get an "Insecure Connection" error in Firefox and other web browsers?
+        </summary>
+        <p class="detail-text">We're effectively interrupting the connection and replacing the website with the blocked page. Your web browser is correct to warn you, since the resulting webpage is abnormal.</p>
+      </details>
+      <details class="faq">
+        <summary>
+          Where can I download this app?
+        </summary>
+        <p class="detail-text">There is currently no public download link. Contact me through my discord bot's support server, or via other means to access the download link.</p>
+      </details>
+      <details class="faq">
+        <summary>
+          What Operating Systems are supported?
+        </summary>
+        <p class="detail-text">
+          Windows 64-bit - Download link is available upon contacting Infinity <br>
+          Linux - A version compiled for linux can be achieved, with minor code modifications <br>
+          MacOS - Unsupported <br>
+          Planned support for android, but no planned iOS support.
+        </p>
+      </details>
+    </div>
+    <p style="font-size: 40px;">System Requirements</p>
+    <p style="font-size: 20px;">Available for Windows 10 & 11 in 32-bit & 64-bit versions. <br>
+      Linux support is a possibility, although is not currently supported. <br>
+      Not available on macOS.
+    </p>
+    <div id="docs">
+      <p style="font-size: 40px;">App FAQ & Docs</p>
+      <details class="faq">
+        <summary>
+          The website blocking doesn't work immediately
+        </summary>
+        <p class="detail-text">
+          Due to browser caching, the website may continue to load unblocked for up to ~10 minutes after enabling website blocking. Close all browser windows and re-open if the issue persists.</p>
+      </details>
+      <details class="faq">
+        <summary>
+          I want to import a Screen Saver, but it's .exe
+        </summary>
+        <p class="detail-text">
+          Rename the file, and change the '.exe' to '.scr'. Click to continue if a warning prompt shows. <br>
+          Then go to Settings > Open Settings Window > Screen Saver, and click the 📂 icon. Find the screensaver file ending in .scr and select. <br>
+          You should now be able to select the Screen Saver in the drop down list to the left of the 📂 icon.
+        </p>
+      </details>
+      <details class="faq">
+        <summary>
+          If I discover a bug, what do I do?
+        </summary>
+        <p class="detail-text">
+          <b>If the app displayed an error,</b> go to Settings > Open Settings Window > Debug Logs, and click the 📨 icon. This sends the debug logs to our development team to look 
+          into the issue as soon as possible.
+          <b>If the app didn't display an error,</b> reach out to use via <a href="https://discord.gg/nacfvPB" style="color:white">our Discord Bot's support server</a>, and we'll help you from there.
+        </p>
+      </details>
+      <details class="faq">
+        <summary>
+          I have a feature suggestion
+        </summary>
+        <p class="detail-text">
+          Feel free to reach out to us via <a href="https://discord.gg/nacfvPB" style="color:white">our Discord Bot's support server</a>, and with any feedback you have. User feedback is valuable to 
+          us and helps us improve the experience for everyone.
+        </p>
+      </details>
+    </div>
+    <p style="font-size: 40px;">About</p>
+    <p style="font-size: 20px;">
+      Revisioner is programmed in Python in conjunction with Qt (PyQt). Most windows utilise Qt features, although the loading splash screen is using tkinter. The app is exported 
+      using PyInstaller.
+    </p>
+    <p style="font-size: 40px;">Changelog</p>
+    <pre style="font-size: 20px; text-align: left; padding-left: 30px; width: 90vw; white-space: pre-wrap;"> <!-- vw = view width-->
+Changes for v1.0.2: 
+- Added details to settings page
+- Ordered dropdown lists so that the option saved would appear as that selected
+- Changed font sizes on settings page
+- Added option to change theme colour
+- Added new update warning
+- Added error handling for Err.Permission denied hosts file etc
+- Added new user hi menu
+- Added website blocked page & webserver
+- Added import screensaver feature.
+- Added option to change theme
+Bug fixes for v1.0.2:
+- Fixed secondary loading screen crashing after 4 hits
+- Fixed website blocking button not always connecting to function
+- Fixed screen saver choice loading incorrectly in settings only on first boot
+- Fixed config file spammed with lots of empty lines
+Changes for v1.0.3 & v1.0.4:
+- Added blocked website list edit functionality
+- Added close button on Settings menu
+- Added system notification to get back to revision
+Bug Fixes for v1.0.3 & v1.0.4:
+- Fixed website blocking crashing, because instead of disconnecting the function, it executes all of them stacked
+- Fix not working well on multiple screens
+- Fixed screen saver import dropdown error
+Changes for v1.0.5:
+- New Dashboard 
+- Added slider to enable website blocking
+- Added options to enable/disable web server and notifications (redirect edit)
+- Changed debugger to fix bugs
+- Added scheduled time slots (reminder window).
+- Rendered reminders window
+- Added reminders background ccript
+- Theme colour changes colour of sliders
+- Restyled some settings window features
+- Added Discord Rich Presence
+- Added www. subdomain for websites automatically
+- Updated "new update available" page
+- Added show error log option in settings
+- Added Changelog to settings window
+- Added Main error handler
+- Added icon image for info windows
+- Added warning icon when rich presence fails
+- Added dark Mode
+- Added option to change background image
+- Updated notification favicon
+- Moved Settings window elements into multiple columns
+- Prevented insecure HTTPS loading by generating certificates
+- Added block page favicon
+- Added loading tips
+- Added Volume control
+- Updated dashboard icons
+- Added new animated loading window splash screen
+- Cursor set to "loading" when website blocking is working
+- Added upload debug logs option
+- Updated new user hi window
+Bug Fixes for v1.0.5:
+- Updated timeouts (err. timeout too low)
+- Fixed settings title overwritten by text underneath
+- Fixed minimise windows not responding to load button pressed on corresponding window
+- Fixed table outline
+- Fixed Tooltip pattern breaking
+- Fixed buttons and lambda function exceptions
+- Fixed Website blocking enabling / disabling via reminders causes button to not respond after being changed.
+- Fixed multiple notifications for single block
+- Fixed notifications so it doesn't require loading on boot to continue responding (or put similar to loading tips here?)
+- Fixed notifications randomly cause app to crash
+- Fixed splash loading screen not closing on elevation
+- Fixed sliders not updating for website blocking when activated/deactivated using reminders
+- Fixed rich presence failing to activate with website blocking through background thread. Use signals instead?
+- Fixed delete button disappears for next reminder when it automatically shifts up - note this is only present when the reminder activates, not with the delete button.
+- Fixed reminders fail if reminder window is closed using windows native button (removed native button)
+Bug fixes for v1.0.6:
+- Fixed potential checksum issues which caused unnecessary flagging by the antivirus
+- Fixed other network users being able to ping you
+- Fixed unnecessary ip binding, so the app is now secured better for public networks.
+- Fixed notification for website blocking text out of scale
+- Attempted to fix desktop notifications for reminders not working.
+    </pre>
+    <!--<img class="fade-in" src="../images/dashboard_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
+    <p style="font-size: 20px;">
+     And here's the reminders page (before dark mode was implemented):
+    </p>
+    <img class="fade-in" src="../images/reminder_window_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
+    <p style="font-size: 20px;">
+      After some deliberation (still v1.0.5), dark mode was added (with background image options - not shown), and some key features reworked:
+    </p>
+    <img class="fade-in" src="../images/dashboard_dark.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
+    <p style="font-size: 20px;">
+      The blockpage was converted to dark mode only (light mode is still available <a href="https://block.infinitydev.org.uk/" class="styled-link" style="font-size: 20px;">here</a>): 
+    </p>
+    <img class="fade-in" src="../images/blockpage.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">-->
+    <p><a href="/index.html" class="styled-link" style="font-size: 20px;">Return Home</a></p>
+    <script src="script.js"></script>
+  </body>
+</html>

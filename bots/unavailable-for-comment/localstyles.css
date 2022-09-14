@@ -1,0 +1,132 @@
+.textbox {
+    background-color: #19232D;
+    width:80%;
+    margin:auto;
+    border-radius: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+    grid-gap: 15px;
+}
+.document-item
+{
+    text-decoration: none;
+}
+.document-container
+{
+    background-color: #19232D;
+    width: 50vw;
+    margin: auto;
+    border: 3px solid black;
+}
+figure {
+  width: 62%;
+  padding: 4px;
+  margin: auto;
+}
+.gallery-image {
+    border-radius: 100%;
+    border: 5px #cccccc solid;
+}
+.feature-text {
+    font-family: Comfortaa;
+    color: #ffffffd7;
+    font-size: 30px;
+}
+.fade-in {
+    animation: fadeIn 5s;
+}
+
+.move-up-on-hover figure:hover {
+    transition: transform 1.2s;
+    transform: translate(0px, -20px);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/* Style buttons */
+.invitebtn {
+    background-color: #3023e2;/*#36ba59;*/
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #3023e2;
+}
+
+/* Darker background on mouse-over 
+.invitebtn:hover {
+    background-color: RoyalBlue;
+}*/
+/* Style buttons */
+.joinserverbtn {
+    background-color: transparent;
+    border: none;
+    color: rgba(3, 143, 236, 0.829);
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #3023e2;
+}
+
+/* Darker background on mouse-over 
+.joinserverbtn:hover {
+background-color: RoyalBlue;
+}*/
+
+table, th, td {
+    font-family: Comfortaa;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #19232D;
+    margin:auto;
+    max-width: 90vw;
+    white-space: pre-wrap;
+}
+table {
+    border-radius: 10px;
+}
+th, td {
+    padding: 15px;
+}
+td {
+    max-width: 80vw;
+    color: white;
+}
+th {
+    text-align: left;
+    color: white;
+}
+
+li:before { content: '✔'; margin-left: -20px; margin-right: 10px; } 
+
+/* The sidenav */
+.mobile-gallery {
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+.mobile-gallery a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Comfortaa;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.mobile-gallery a:hover {
+    color: #f1f1f1;
+}
